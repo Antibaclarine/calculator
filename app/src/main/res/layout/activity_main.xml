@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/btnMultiply"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/num1"
+            android:layout_width="376dp"
+            android:layout_height="130dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:hint="Enter number 1"
+            android:inputType="numberDecimal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <EditText
+            android:id="@+id/num2"
+            android:layout_width="380dp"
+            android:layout_height="117dp"
+            android:layout_below="@+id/num1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="-4dp"
+            android:ems="10"
+            android:hint="Enter number1"
+            android:inputType="number"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/btnadd"
+            android:layout_width="111dp"
+            android:layout_height="62dp"
+            android:layout_alignBottom="@+id/num2"
+            android:layout_marginEnd="94dp"
+            android:layout_marginBottom="-170dp"
+            android:layout_toStartOf="@+id/btnsubstract"
+            android:text="add(+)"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <Button
+            android:id="@+id/btnsubstract"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/num2"
+            android:layout_alignBottom="@+id/num2"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="105dp"
+            android:layout_marginEnd="70dp"
+            android:layout_marginBottom="-164dp"
+            android:text="subtract(-)" />
+
+        <Button
+            android:id="@+id/btnmultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="67dp"
+            android:layout_alignBottom="@+id/btnadd"
+            android:layout_marginEnd="76dp"
+            android:layout_marginBottom="-123dp"
+            android:layout_toStartOf="@+id/btndivide"
+            android:text="multiply(*)" />
+
+        <Button
+            android:id="@+id/btndivide"
+            android:layout_width="113dp"
+            android:layout_height="65dp"
+            android:layout_alignBottom="@+id/btnsubstract"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="63dp"
+            android:layout_marginBottom="-128dp"
+            android:text="divide(/)" />
+
+        <TextView
+            android:id="@+id/tvresult"
+            android:layout_width="193dp"
+            android:layout_height="77dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="28dp"
+            android:text="result"
+            android:textColor="#731212"
+            android:textSize="34sp" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
